@@ -5,7 +5,6 @@ import tensorflow as tf
 
 tf.random.set_seed(1)
 
-gym_ple.main(100)
 env = gym.make('FlappyBird-v0')
 n_games = 20
 agent = Agent(lr = 1, gamma=.9, n_actions = 2, epsilon = 0, batch_size= 100,
